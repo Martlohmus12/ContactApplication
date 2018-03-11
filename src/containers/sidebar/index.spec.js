@@ -20,7 +20,7 @@ describe('Sidebar', () => {
         store.dispatch = jest.fn();
 	});
 
-    test('renders searchBar component', () => {
+    test('renders SearchBar component', () => {
        // TODO
     });
 
@@ -32,11 +32,9 @@ describe('Sidebar', () => {
         // TODO
     });
 
-
-    test('filterContact function filters correctyl by search term', () => {
+    test('filterContact function filters correctly by search term', () => {
         // TODO
     });
-
 
     test('sets state when search function is called ', () => {
         // TODO

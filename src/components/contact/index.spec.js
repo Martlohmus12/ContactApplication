@@ -8,7 +8,7 @@ describe('Contact', () => {
 	beforeEach(() => {
 		props = {
 			contact: {
-                sex: 'male',
+                gender: 'male',
                 firstname: 'martin',
                 lastname: 'mets'
 			},
@@ -16,9 +16,9 @@ describe('Contact', () => {
 		};
 	});
 
-    test('renders female avatar if given sex is female', () => {
+    test('renders female avatar if given gender is female', () => {
         const contact = {
-            sex: 'female',
+            gender: 'female',
             firstname: 'mari',
             lastname: 'mets'
         };
@@ -29,7 +29,7 @@ describe('Contact', () => {
         expect(wrapper.find('.avatar-girl')).toHaveLength(1);
     });
 
-    test('renders male avatar if given sex is male', () => {
+    test('renders male avatar if given gender is male', () => {
         const wrapper = shallow(
             <Contact {...props}/>,
         );

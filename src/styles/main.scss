@@ -26,6 +26,7 @@ body {
   flex: 3;
   justify-content: center;
   display: flex;
+  align-items: center;
 
   .initialContact {
     display: flex;
@@ -171,7 +172,7 @@ body {
 @media (max-width:1025px) {
   .main {
     flex-direction: column;
-    margin: 0 0 0 0;
+    margin: 0;
   }
 
   .sidebar {
@@ -184,6 +185,7 @@ body {
     -webkit-flex: 1;
     flex: 1;
     order: 0;
-    padding-top: 80px;
+    margin: 100px 0 100px 0;
+
   }
 }
