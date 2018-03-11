@@ -5,12 +5,17 @@ module.exports = {
     'react-hot-loader/patch',
     './src/index.js'
   ],
+//   devtool: 'inline-source-map',
   module: {
     rules: [
       {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         use: ['babel-loader']
+      },
+      {
+        test: /\.(css|scss)$/,
+        use: ['style-loader','css-loader' , 'sass-loader']
       }
     ]
   },
@@ -23,7 +28,7 @@ module.exports = {
     filename: 'bundle.js'
   },
   plugins: [
-    new webpack.HotModuleReplacementPlugin()
+    new webpack.HotModuleReplacementPlugin(),
   ],
   devServer: {
     contentBase: './dist',
